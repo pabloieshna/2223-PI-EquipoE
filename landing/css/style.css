@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+html {
+    scroll-behavior: smooth;
+}
+.nav-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    height: 46px;
+}
+.a-container{
+    float: left;
+    display: flex;
+}
+.logo-container{
+    float: right;
+    display: flex;
+}
+.img-logo{
+    height: 46px;
+    width: 60px;
+}
+.a-menu{
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.a-menu:hover {
+    background-color: #eee;
+    font-weight: bold;
+  }
+section{
+    margin-top: 46px;
+}
+.home-container{
+    background-image:url("../img/cementerio.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.home-text{
+    background-color: rgba(4,7,32,0.5);
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    text-shadow: 8px 10px 10px #000000;
+    border-top:none;
+    border-bottom: none;
+    padding: 90px 40px;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 800;
+}
+.cementerio{
+    height: 700px;
+    background-image: url("../img/estatuas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+}
+.title{
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    padding: 60px 10px;
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 10%;
+    text-transform: uppercase;
+    width: 80%; 
+}
+.cementerio-main{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;   
+}
+.cementerio-text{
+    padding: 30px;
+    width: 100%;
+}
+p{
+    color: #fff;
+    font-size: 20px;
+}
+.form-busqueda{
+    display: flex;
+}
+.text-busqueda{
+    background-color: none;
+    display: block;
+    height: 50px;
+    width: 100%;
+    color: #111;
+    font-size: 1.5em;
+    transition-duration: .3s;
+    border: 1px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.text-busqueda:focus{
+    font-size: 2em;
+    font-weight: bold;
+}
+.submit-busqueda{
+    height: 50px;
+    width: 100px;
+    color: #111;
+    font-size: 1.5em;
+    transition-duration: .3s;
+    background-color: rgba(109, 101, 101, 0.175)11;
+    border-radius: 10px;
+    border: 1px;
+}
+.submit-busqueda:hover{
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+    width: 120px;
+}
+
+.about{
+    padding-bottom: 100px;
+    background-color: black;
+    overflow: hidden;
+}
+.card{
+    width:80%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: auto;
+    overflow: hidden;
+}
+.card-list{
+    width:300px;
+    margin-top: 50px;
+    overflow: hidden;
+    color: #fff;
+
+}
+
+.card-image{
+    width:100%;
+    height: 200px;
+
+}
+.card-image img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-text{
+    width:90%;
+    
+}
