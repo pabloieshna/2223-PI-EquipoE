@@ -13,7 +13,7 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #fff;
+ 
     height: 46px;
 }
 .a-container{
@@ -28,19 +28,28 @@ html {
     height: 46px;
     width: 60px;
 }
+         
 .a-menu{
-    display: block;
-    color: #333;
+    background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+    margin-left: 5px;
+    padding: 15px 45px;
     text-align: center;
-    padding: 14px 16px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
     text-decoration: none;
 }
 .a-menu:hover {
-    background-color: #eee;
-    font-weight: bold;
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+
   }
 section{
-    margin-top: 46px;
+    /* margin-top: 46px; */
 }
 .home-container{
     background-color: #FFFFFF;
