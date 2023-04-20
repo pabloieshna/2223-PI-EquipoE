@@ -13,7 +13,7 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
- 
+    background-color: #333;
     height: 46px;
 }
 .a-container{
@@ -30,22 +30,20 @@ html {
 }
          
 .a-menu{
-    background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
-    margin-left: 5px;
+    background-color: #333;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
+    color: #fff;
+    font-size: 1em;            
     display: block;
     text-decoration: none;
 }
 .a-menu:hover {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
+    background-color: #444;
+    font-size: 1.2em;
 
   }
 section{
@@ -72,108 +70,4 @@ h1{
     text-transform: uppercase;
     font-size: 80px;
     font-weight: 800;
-}
-.cementerio{
-    height: 700px;
-    background-image: url("../img/estatuas.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    background-position: center;
-}
-.title{
-    color: #fff;
-    width: 100%;
-    margin: auto;
-    padding: 60px 10px;
-    font-size: 50px;
-    font-weight: 600;
-    margin-left: 10%;
-    text-transform: uppercase;
-    width: 80%; 
-}
-.cementerio-main{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;   
-}
-.cementerio-text{
-    padding: 30px;
-    width: 100%;
-}
-p{
-    color: #fff;
-    font-size: 20px;
-}
-.form-busqueda{
-    display: flex;
-}
-.text-busqueda{
-    background-color: none;
-    display: block;
-    height: 50px;
-    width: 100%;
-    color: #111;
-    font-size: 1.5em;
-    transition-duration: .3s;
-    border: 1px;
-    border-radius: 10px;
-    margin-right: 5px;
-}
-.text-busqueda:focus{
-    font-size: 2em;
-    font-weight: bold;
-}
-.submit-busqueda{
-    height: 50px;
-    width: 100px;
-    color: #111;
-    font-size: 1.5em;
-    transition-duration: .3s;
-    background-color: rgba(109, 101, 101, 0.175)11;
-    border-radius: 10px;
-    border: 1px;
-}
-.submit-busqueda:hover{
-    font-size: 1.8em;
-    font-weight: bold;
-    cursor: pointer;
-    width: 120px;
-}
-
-.about{
-    padding-bottom: 100px;
-    background-color: black;
-    overflow: hidden;
-}
-.card{
-    width:80%;
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin: auto;
-    overflow: hidden;
-}
-.card-list{
-    width:300px;
-    margin-top: 50px;
-    overflow: hidden;
-    color: #fff;
-
-}
-
-.card-image{
-    width:100%;
-    height: 200px;
-
-}
-.card-image img{
-    width:100%;
-    height: 200px;
-    object-fit: cover;
-}
-.card-text{
-    width:90%;
-    
 }
