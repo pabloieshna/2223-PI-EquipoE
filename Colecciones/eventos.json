@@ -1,0 +1,16 @@
+[
+  {
+  "festival": "Festival de Música 2023",
+  "ubicacion": "Ciudad de México",
+  "eventos": [
+      {
+      "nombre": "Concierto de apertura",
+      "fecha": "2023-06-01",
+      "hora": "19:00",
+      "artista": "Banda XYZ",
+      "genero": "Rock",
+      "descripcion": "La banda XYZ dará el concierto de apertura del festival con sus éxitos más recientes y algunos clásicos del rock."
+      }
+    ]
+  }
+]
