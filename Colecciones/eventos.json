@@ -1,16 +1,32 @@
-[
-  {
-  "festival": "",
-  "ubicacion": "",
+{
   "eventos": [
-      {
+    {
       "nombre": "",
       "fecha": "",
       "hora": "",
       "artista": "",
       "genero": "",
-      "descripcion": ""
-      }
-    ]
-  }
-]
+      "descripcion": "",
+      "boletos": [
+        {
+          "tipo": "General",
+          "precio": 25,
+          "cantidad_disponible": 1000
+        },
+        {
+          "tipo": "VIP",
+          "precio": 50,
+          "cantidad_disponible": 500
+        }
+      ],
+      "patrocinadores": [
+        {
+          "nombre": "",
+          "logo": "",
+          "nivel": ""
+        }
+      ],
+      "ubicacion": ""
+    }
+  ]
+}
