@@ -1,7 +1,13 @@
 {
   "eventos": [
     {
+      "festival":{
+        "festival_id":"",
+        "festival_nombre":"",
+        "url":""
+      },
       "nombre": "",
+      "ciudad": "",
       "fecha": "",
       "hora": "",
       "artista": "",
@@ -25,8 +31,7 @@
           "logo": "",
           "nivel": ""
         }
-      ],
-      "ubicacion": ""
+      ]
     }
   ]
 }
