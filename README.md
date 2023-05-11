@@ -1,7 +1,7 @@
 # PublicitEX
 
 ### Integrantes:
-- **Pablo Rodríguez:** Coordinador 
+- **Pablo Rodríguez:** Coordinador / Backend
 + **José Marques Sanchez:** Backend
 - **Miguel Angel Herrojo:** Frontend
 * **Ivan Robledo:** Frontend
