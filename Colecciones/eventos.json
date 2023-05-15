@@ -13,16 +13,11 @@
       "artista": "",
       "genero": "",
       "descripcion": "",
-      "boletos": [
+      "entradas": [
         {
           "tipo": "General",
-          "precio": 25,
+          "precio": 24,
           "cantidad_disponible": 1000
-        },
-        {
-          "tipo": "VIP",
-          "precio": 50,
-          "cantidad_disponible": 500
         }
       ],
       "patrocinadores": [
