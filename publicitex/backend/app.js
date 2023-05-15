@@ -4,6 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import dbConnect from './config/mongodb.js'
 
+
 dotenv.config()
 
 const app = express();
@@ -19,8 +20,11 @@ app.listen(port, () => {
 
 //Conectamos a la BD
 try {
-    await dbConnect()
-    console.log('MongoDB connected')
-} catch (error) {
-    console.log(`Error connecting to MongoDB: ${error} `)
+    //Con await esperamos a que la BD se conecte
+  var db = await dbConnect();
+  console.log('Connected to database');
+}
+catch (error) {
+    //En caso de error, lo mostramos.
+  console.log(error);
 }
