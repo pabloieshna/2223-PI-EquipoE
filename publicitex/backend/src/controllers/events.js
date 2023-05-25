@@ -1,32 +1,33 @@
 //fichero controllers\events.js
 
 //Importar el modelo de events
-import { eventsModel } from '../models/events.js'
+
+import { eventModel } from '../models/index.js'
 
 /**
  * Método para obtener todos los items
  */
-const getItems = async (req, res) => {
-  //usamos el modelo para realizar la operación en BD, a través de la conexión realizada en el index.js y vinculada a los modelos a través de Mongoose
-  const data = await eventsModel.find({})
+const getEvents = async (req, res) => {
+//usamos el modelo para realizar la operación en BD, a través de la conexión realizada en el index.js y vinculada a los modelos a través de Mongoose
+  const data = await eventModel.find({})
   res.send({ data })
 }
 
 /**
  * Método para obtener un item
  */
-const getItem = async (req, res) => {
-
-  }
-
+const getEventsByMonth = async (req, res) => {
+  res.send('¡Soy el panel de administración!');
+ }
+1
 /**
  * Método para crear un item
  */
-const createItem = async (req, res) => {
+const createEvent = async (req, res) => {
   //Obtiene el body de la request, utilizando desestructuración. const body = req.body
   const { body } = req
   //Persistir los datos a BD, creando un documento
-  const data = await eventsModel.create(body)
+  const data = await eventModel.create(body)
   
   //Retornamos los datos persistidos. Express necesita retornar algo sino se queda esperando 
   res.send({ data })
@@ -35,12 +36,12 @@ const createItem = async (req, res) => {
 /**
  * Método para actualizar un item
  */
-const updateItem = (req, res) => { } //Pendiente
+const updateEvent = (req, res) => { } //Pendiente
 
 /**
  * Método para actualizar un item
  */
-const deleteItem = (req, res) => { } //Pendiente
+const deleteEvent = (req, res) => { } //Pendiente
 
 //exportar los métodos
-export { getItems, getItem, createItem, updateItem, deleteItem }
+export { getEvents, getEventsByMonth, createEvent, updateEvent, deleteEvent}

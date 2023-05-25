@@ -1,46 +1,27 @@
 //fichero controllers\festivals.js
 
 //Importar el modelo de festivals
-import { festivalsModel } from '../models/events.js'
+import { festivalModel } from '../models/index.js'
 
 /**
- * Método para obtener todos los items
+ * Método para obtener todos los festivales
  */
-const getItems = async (req, res) => {
+const getFestivals = async (req, res) => {
   //usamos el modelo para realizar la operación en BD, a través de la conexión realizada en el index.js y vinculada a los modelos a través de Mongoose
-  const data = await festivalsModel.find({})
+  const data = await festivalModel.find({})
   res.send({ data })
 }
 
 /**
- * Método para obtener un item
+ * Método para obtener un festival
  */
-const getItem = async (req, res) => {
-
+const getFestivalByType = async (req, res) => {
+  res.send('Soy un festival de teatro')
   }
-
 /**
- * Método para crear un item
+ * Método para borrar un festival
  */
-const createItem = async (req, res) => {
-  //Obtiene el body de la request, utilizando desestructuración. const body = req.body
-  const { body } = req
-  //Persistir los datos a BD, creando un documento
-  const data = await festivalsModel.create(body)
-  
-  //Retornamos los datos persistidos. Express necesita retornar algo sino se queda esperando 
-  res.send({ data })
-}
-
-/**
- * Método para actualizar un item
- */
-const updateItem = (req, res) => { } //Pendiente
-
-/**
- * Método para actualizar un item
- */
-const deleteItem = (req, res) => { } //Pendiente
+const deleteFestival = (req, res) => { } //Pendiente
 
 //exportar los métodos
-export { getItems, getItem, createItem, updateItem, deleteItem }
+export { getFestivals, getFestivalByType, deleteFestival }

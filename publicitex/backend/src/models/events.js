@@ -1,6 +1,7 @@
 import mongoose from "mongoose" 
 
 const eventoSchema = mongoose.Schema({
+  id: Number,
   festival: {
     festival_id: Number,
     festival_nombre: String,
@@ -8,11 +9,16 @@ const eventoSchema = mongoose.Schema({
   },
   nombre: String,
   ciudad: String,
-  fecha: String,
+  fecha: {
+    fecha_mes: String,
+    fecha_dia: String,
+    fecha_año: String 
+  },
   hora: String,
   artista: String,
   genero: String,
   descripcion: String,
+  thumbnail: String,
   entradas: [
     {
       tìpo: String,

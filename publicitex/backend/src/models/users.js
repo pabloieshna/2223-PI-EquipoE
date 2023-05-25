@@ -15,6 +15,7 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
     },
+    favs: [],
     role: {
         type: ["user", "admin"],  //Estructura de Array con los valores que puede tener
         default: "user",  //se indica un valor por defecto
