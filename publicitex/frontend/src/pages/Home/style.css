@@ -1,0 +1,20 @@
+.landingpage{
+display: flex;
+flex-direction: column;
+  gap: 2rem;
+}
+.landingpage:nth-child(even) {
+  .content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .landingpage:nth-child(even) {
+      .content{
+        flex-direction: column-reverse !important;
+    }
+  }
+}

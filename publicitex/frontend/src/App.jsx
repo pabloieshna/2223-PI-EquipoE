@@ -1,19 +1,15 @@
+import { MyRoutes } from './router/routes'
+
 import './App.css'
 
-import Nav from './components/Nav/Nav'
-import Eslogan from './components/Eslogan/Eslogan'
-import Searcher from './components/Searcher/Searcher'
-//import About from './components/About/About'
-
 function App() {
-  
-  return(
+
+
+  return (
     <>
-    <Nav />
-    <Eslogan />
-    <Searcher />
+    <MyRoutes/>
     </>
-  )    
+  )
 }
 
 export default App

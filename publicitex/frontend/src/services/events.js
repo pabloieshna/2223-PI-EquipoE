@@ -10,8 +10,8 @@ export const searchEvents = async ({ search }) => {
             const response = await fetch(url)
             if (response.status !== 200)
                 throw new Error('Error al buscar los eventos')
-            const data = await response.json()
-            return data
+            const datosDevueltos = await response.json()
+            return datosDevueltos.data;
         } catch (error) {
             console.log(error)
             throw new Error('Error al buscar los eventos')
@@ -25,8 +25,8 @@ export const searchEvents = async ({ search }) => {
         if (response.status !== 200)
             throw new Error('Error al buscar los eventos');
 
-        const data = await response.json();
-        return data;
+        const datosDevueltos = await response.json();
+        return datosDevueltos.data;
 
     } catch (error) {
         console.log(error)

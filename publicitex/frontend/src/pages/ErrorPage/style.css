@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+.btn{
+    padding: 0 10px;
+    height: 100%;
+    font-size: 2em;
+    align-items: center;
+    text-decoration: none;
+    color: #ddd;
+    border-radius: 7px;
+    transition: .3s;
+}
+.btn:hover{
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: bold;
+    color: #eee;
+}
