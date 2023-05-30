@@ -3,8 +3,6 @@ import { MyRoutes } from './router/routes'
 import './App.css'
 
 function App() {
-
-
   return (
     <>
     <MyRoutes/>

@@ -15,7 +15,7 @@ export default function Article({imgSrc,titleText,text,linkPath,textButton}) {
         <div className="content-text">
             <h2 className="content-text-tittle"> {titleText} </h2>
             <p>{text}</p>
-            <Link to={linkPath} className="btn">
+            <Link to={linkPath} className="boton">
                 {textButton}
             </Link>
         </div>

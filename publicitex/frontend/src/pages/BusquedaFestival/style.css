@@ -1,0 +1,47 @@
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.searchForm {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+.formInput {
+    color: #1d1d1d;
+    color: var(--form-text);
+    background-color: #efefef;
+    background-color: gray;
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+  }
+.formInput:active{
+
+}
+.formSubmit{
+  color: #1d1d1d;
+    color: var(--form-text);
+    background-color: #efefef;
+    background-color: gray;
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+.titulo{
+    color: white;
+}

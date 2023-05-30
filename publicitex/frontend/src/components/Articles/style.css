@@ -37,7 +37,7 @@ p {
         line-height: 1.5em;
         margin: 1rem 0;
 }
-.btn {
+.boton {
         position: relative;
         display: inline-block;
         min-width: 11rem;
@@ -45,19 +45,20 @@ p {
         padding: 1rem 0;
         margin-top: 1.5rem;
         text-decoration: none;
-        background-color: #fff;
-        color: #333;
-        border: 1px solid #000;
+        background-color: #eee;
+        color: #222;
         border-radius: 60px 60px;
         text-align: center;
         font-weight: 500;
-        font-size: 1.1em;
+        font-size: 1.3em;
         transition: 0.25s;
 /* //No sobresaltar con el raton el texto */
         user-select: none;
 }
-.btn:hover {
+.boton:hover {
     letter-spacing: 0.1rem;
+    font-weight: bold;
+
 }
   @media screen and (max-width: 37.5rem) {
     .content {

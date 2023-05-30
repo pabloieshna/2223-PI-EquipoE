@@ -1,6 +1,12 @@
 body{
     text-align: center;
 }
+.notFoundContainer{
+height: 60vh;
+}
+.errorMessage{
+    color: red;
+}
 .btn{
     padding: 0 10px;
     height: 100%;

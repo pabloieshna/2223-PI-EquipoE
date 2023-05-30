@@ -2,24 +2,11 @@ import mongoose from "mongoose"  //Importar mongoose
 
 //Creción del esquema. Se indica cada campo de la BD con su tipo
 const userSchema = new mongoose.Schema({ 
-    name: {
+    user: {
         type: String,
+        unique: true
     },
-    age: {
-        type: Number,
-    },
-    email: {
-        type: String,
-        unique: true,
-    },
-    password: {
-        type: String,
-    },
-    favs: [],
-    role: {
-        type: ["user", "admin"],  //Estructura de Array con los valores que puede tener
-        default: "user",  //se indica un valor por defecto
-    },
+    mensaje: String
 }, {
     timestamps: true,  //createAt, updateAt. ==> utilizado para que automaticamente cree los campos createAt y updateAt
     versionKey: false // __v: 0. ==> necesita establecerse

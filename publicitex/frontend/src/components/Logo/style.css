@@ -1,5 +1,3 @@
-
-
 .logo-container{
     padding-left: 1rem;
     display: flex;
@@ -10,9 +8,7 @@
 .logo{
     width: 8rem;
     user-select: none;
-}
-.logo:hover{
-cursor: pointer;
+    cursor: pointer;
 }
 .logo-text{
     margin-top: -0.2rem;

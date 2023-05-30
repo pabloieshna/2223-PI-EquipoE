@@ -1,8 +1,8 @@
 import { getBaseUrl } from '../utils/utils.js';
 
-export const searchFestivals = async () => {
+export const allFestivals = async () => {
 
-    console.log(`searchFestivals`)
+
         try{
             const url  = `${getBaseUrl()}/festivals`
             console.log(`searchFestivals con url ${url}`)
@@ -15,4 +15,4 @@ export const searchFestivals = async () => {
             console.log(error)
             throw new Error('Error al buscar los festivales')
         }
-    }
+}

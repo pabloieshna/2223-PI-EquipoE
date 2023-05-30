@@ -1,0 +1,58 @@
+.contactoContainer{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+}
+.contactoContentContainer{
+    background-color: rgba(128, 128, 128, 0.879);
+    width: 50%;
+    height: 100%;
+    border-radius: 25px;
+}
+.contactoTittle{
+    font-weight: bold;
+    padding: 10px
+}
+.contactoSection{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactolbl{
+    font-size: 1.4em;
+}
+.contactoInput{
+    width: 70%;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #000;
+    border-radius: 25px;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+.contactoBtnContainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+.contactoBtn{
+    background: none;
+    border: none;
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.contactoBtn:hover{
+    cursor: pointer;
+    font-size: 1.7em;
+    word-spacing: 2%;
+}
+.contactoBtn:active{
+    border: none;
+}

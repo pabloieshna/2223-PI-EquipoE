@@ -34,7 +34,7 @@
     text-decoration: none;
     position: relative;
     padding: 1.2rem 0.7rem;
-    color: #ddd;
+    color: #eee;
     font-size: 1.2rem;
     transition: 0.4s;
 }
@@ -46,6 +46,10 @@
     color: #fff;
 }
 
+.hamburguesa:active {
+  transform: scale(0.9);
+  transition: 0.2s;
+}
 
 @media screen and (max-width: 38.5rem) {
   

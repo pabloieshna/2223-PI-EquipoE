@@ -1,9 +1,14 @@
-import NotFound from "../pages/ErrorPage/NotFound";
-import SearchResults from "../pages/SearchResults/index";
-import LandingPage from '../pages/Home/index'
-import Nav from "../components/Nav/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { Footer } from "../components/Footer/Footer";
+
+import NotFound from "../pages/ErrorPage/NotFound";
+import Festivals from "../pages/Festivals/Festivals";
+import LandingPage from '../pages/Home/index'
+import BusquedaFestival from '../pages/BusquedaFestival/BusquedaFestival.jsx'
+import Contacto from '../pages/Contacto/Contacto'
+
+import Nav from "../components/Nav/Nav";
+import { Footer } from "../components/Footer/Footer";
+
 function MyRoutes() {
   return (
     <Router>
@@ -11,12 +16,12 @@ function MyRoutes() {
       <Routes>
         <Route exact path="/" element={<LandingPage />} />
         <Route exact path="/home" element={<LandingPage />} />
-        <Route exact path="/festivals" element={<SearchResults />} />
-        <Route exact path="/events" element={<SearchResults />} />
-        <Route exact path="/events/:ciudad" element={<SearchResults />} />
+        <Route exact path="/festivals" element={<Festivals />} />
+        <Route exact path="/festival/buscar" element={<BusquedaFestival />} />
+        <Route exact path="/contacto" element={<Contacto />} />
         <Route exact path="*" element={<NotFound />} />
       </Routes> 
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

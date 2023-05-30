@@ -1,37 +1,29 @@
 import './style.css'
 import Article from "../../components/Articles/Article";
+import {textUno, textDos, textTres, imgUno, imgDos, imgTres} from './articlePublics';
 
 export default function LandingPage() {
-  //Imagenes
-  const imgUno = "../../../public/corchea.png";
-  const imgDos = "../../../public/máscara.png";
-  const imgTres = "https://i.ibb.co/jvRLVRN/ensalada.png";
-  const textArticle =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
-    "Perspiciatis tenetur temporibus eius, ipsum fugiat sequi commodi" +
-    "unde molestias voluptatibus ullam incidunt possimus rerum atque." +
-    "Rerum exercitationem dolorem hic unde doloremque!";
 
   return (
       <section className="landingpage">
         <Article
           linkPath={"/events"}
           imgSrc={imgUno}
-          text={textArticle}
+          text={textUno}
           textButton={"Ver Eventos"}
-          titleText={"Eventos de España"}
+          titleText={"Eventos Musicales"}
         />
         <Article
           linkPath={"/events/top"}
           imgSrc={imgDos}
-          text={textArticle}
+          text={textDos}
           textButton={"Top 10 Eventos"}
           titleText="Explora tus gustos"
         />
         <Article
-          linkPath={"/buscador"}
+          linkPath={"/festival/buscar"}
           imgSrc={imgTres}
-          text={textArticle}
+          text={textTres}
           textButton={"Buscar"}
           titleText="Encuentra lo que buscas"
         />

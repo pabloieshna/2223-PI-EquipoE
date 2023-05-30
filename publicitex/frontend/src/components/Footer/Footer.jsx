@@ -11,42 +11,46 @@ import {
 //COMPONENT
 export function Footer() {
   return (
-    <>   
+    <section className="footerContainer">
       <ul className="sci">
-        <li>
+        <li className='footerElement'>
           <Link
-                to="https://github.com/jesusmariaieshna/2223-PI-EquipoD"
+          className='footerElementLink'
+                to="https://github.com/pabloieshna/2223-PI-EquipoE"
                 target="_blank"
           >
             <SiGithub className="icon" size="30px" />
           </Link>
         </li>
-        <li>
-          <Link to="/">
-            <SiInstagram size="30px" color="##bbbbcc" />
+        <li className='footerElement'>
+          <Link to="https://www.instagram.com/festivaldemerida"
+          target="_blank"
+          >
+            <SiInstagram size="30px" className="icon" />
           </Link>
         </li>
-        <li>
-          <Link to="/">
-            <SiFacebook size="30px" />
+        <li className='footerElement'>
+          <Link to="https://www.facebook.com/FestivalMerida/?locale=es_ES"
+          target="_blank"
+          >
+            <SiFacebook size="30px" className="icon" />
           </Link>
         </li>
-        <li>
-          <Link to="/">
-            <SiTwitter size="30px" />
+        <li className='footerElement'>
+          <Link to="https://twitter.com/Festival_Merida"
+          target="_blank"
+          >
+            <SiTwitter size="30px" className="icon" />
           </Link>
         </li>
-        <li>
-          <Link to="/">
-            <SiTiktok size="30px" />
+        <li className='footerElement'>
+          <Link to="https://www.tiktok.com/@el_hormiguero/video/7236092583095651610"
+          target="_blank"
+          >
+            <SiTiktok size="30px" className="icon" />
           </Link>
         </li>
       </ul>
-      <div className="logo">
-        <div>
-          {/* <Logo /> */}
-        </div>
-      </div>
-    </>
+      </section>
   );
 }

@@ -6,7 +6,7 @@ import { userModel } from '../models/index.js'
 /**
  * Método para obtener todos los usuarios
  */
-const getUsers = async (req, res) => {
+const getMessage = async (req, res) => {
   const data = await userModel.find({})
   res.send({ data })
 }
@@ -14,7 +14,7 @@ const getUsers = async (req, res) => {
 /**
  * Método para crear un item
  */
-const createUser = async (req, res) => {
+const postMessage = async (req, res, next) => {
   //Obtiene el body de la request, utilizando desestructuración. const body = req.body
   const { body } = req
   //Persistir los datos a BD, creando un documento
@@ -27,12 +27,21 @@ const createUser = async (req, res) => {
 /**
  * Método para actualizar un item
  */
-const updateUser = (req, res) => { } //Pendiente
+const updateMessage = async (req, res) => {
+  await userModel.findOneAndUpdate({
+  user: req.body.usuario,
+  mensaje: req.body.message
+  })
+  res.send(true)
+ }
 
 /**
  * Método para actualizar un item
  */
-const deleteUser = (req, res) => { } //Pendiente
+const deleteMessage = async (req, res) => {
+  await userModel.findOneAndDelete({user: req.params.id})
+  res.send(true)
+}
 
 //exportar los métodos
-export { getUsers, createUser, updateUser, deleteUser }
+export { getMessage, postMessage, updateMessage, deleteMessage }

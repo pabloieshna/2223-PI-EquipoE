@@ -4,6 +4,7 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import { eventRoute, userRoute, festivalRoute } from './routes/index.js'
 import dbConnect from './src/config/mongodb.js'
+import { festivalModel } from './src/models/index.js'
 
 
 dotenv.config()
@@ -31,3 +32,30 @@ try {
 app.listen(port, () => {
     console.log(`Server is running on port http://localhost:${port}`);
 })
+
+// festivalModel.create({
+//     id:4,
+//     nombre: 'Maremagnun',
+//     ubicacion: 'Malaga',
+//     descripcion: 'Festival de música',
+//     eventos: [
+//       {
+//         nombre: 'Marea',
+//         fecha: '23/7/2024',
+//         hora: '20:30',
+//         artista: 'Marea',
+//         genero: 'Música',
+//         descripcion: 'Concierto interpretado por Marea'
+//       }
+//     ],
+//     fecha_inicio: {
+//       fecha_dia: 23,
+//       fecha_mes: 7,
+//       fecha_año: 2024 
+//     },
+//     fecha_fin: {
+//       fecha_dia: 25,
+//       fecha_mes: 8,
+//       fecha_año: 2024 
+//     }
+//   })

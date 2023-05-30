@@ -1,19 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&display=swap");
-  /*Quiero posicionarlo abajo del todo
-   pero no puedo, creo que es porque no tiene ningun padre 
-   con posicion relativa antes?*/
-  /* position: relative;
-  bottom: 0;
-  margin: 0;
-  padding: 0;
-  margin-top: 0.5rem;
-    position: relative;
-    bottom: 0;
-   
-    display: flex;
-    justify-content: space-between;
-  */
 /* Caja de redes sociales */
+.footerContainer{
+ display: flex;
+ width: 100%;
+ justify-content: center; 
+}
 .sci {
     width: 30%;
     padding: 0 0 0.5rem 2rem;
@@ -21,40 +11,23 @@
     justify-content: flex-start;
     align-items: flex-end;
     gap: 0.5rem;
+    margin-top: 10px;
 }
-li {
+.footerElement {
       transition: 0.4s;
       list-style: none;
-      /* No se como acceder al icono, asique como
-      se que es el unico hijo, le pongo '*' */
 }
-* {
-        color: #bbc;
-      }
-li:hover {
+
+.footerElement:hover {
       transition: 0.3s;
       transform: translateY(-0.5rem);
 }
-.logo {
-    width: 100%;
-    padding:0 2rem .5rem 0;
-    display: flex;
-    justify-content: flex-end;
+.icon{
+  color: aliceblue;
 }
-div{
-    width: fit-content
-}
-img{
-    width:5rem;
-}
+
 /* //Nombre del logo */
-.header-logo-title{
-    font-size: medium;
-}
 @media screen and (max-width: 38.5rem) {
-    .logo {
-      display: none;
-    }
     .sci {
       width: 100%;
       justify-content: center;

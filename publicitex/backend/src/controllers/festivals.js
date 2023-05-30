@@ -15,13 +15,23 @@ const getFestivals = async (req, res) => {
 /**
  * Método para obtener un festival
  */
-const getFestivalByType = async (req, res) => {
-  res.send('Soy un festival de teatro')
-  }
+const getFestivalByCity = async (req, res) => {
+  const data = await festivalModel.find({ubicacion: req.params.city})
+  res.send({data})  
+}
+
+const createFestival = async (req, res) =>{
+  const { body }=req;
+  const data = await festivalModel.create(body);
+}
+
 /**
  * Método para borrar un festival
  */
-const deleteFestival = (req, res) => { } //Pendiente
+const deleteFestivalById = async (req, res) => { 
+  const data = await festivalModel.deleteOne({id: req.params.id})
+  res.send('Eliminado Correctamente el festival con id: ', req.params.id)
+} 
 
 //exportar los métodos
-export { getFestivals, getFestivalByType, deleteFestival }
+export { getFestivals, getFestivalByCity, deleteFestivalById, createFestival }

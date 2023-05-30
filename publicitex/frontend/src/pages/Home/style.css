@@ -11,10 +11,3 @@ flex-direction: column;
     justify-content: space-around;
   }
 }
-@media screen and (max-width: 37.5rem) {
-  .landingpage:nth-child(even) {
-      .content{
-        flex-direction: column-reverse !important;
-    }
-  }
-}

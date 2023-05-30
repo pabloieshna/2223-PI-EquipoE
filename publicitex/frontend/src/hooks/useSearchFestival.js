@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { allFestivals } from "../services/allFestivals";
+import { festivalsByCity } from "../services/festivalsByCity.js";
 
 
-export function useFestivals() {
+export function useSearchFestivals() {
 
     const [festivales, setFestivals] = useState([]);
 
-    const getFestivals = async () => {
+    const getFestivals = async ({search}) => {
         console.log(`useFestivals hook rendering...`)
-        const newFestivals = await allFestivals();
+        const newFestivals = await festivalsByCity({search});
         setFestivals(newFestivals)
     }
 
