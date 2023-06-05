@@ -7,7 +7,7 @@ import BusquedaFestival from '../pages/BusquedaFestival/BusquedaFestival.jsx'
 import Contacto from '../pages/Contacto/Contacto'
 
 import Nav from "../components/Nav/Nav";
-import { Footer } from "../components/Footer/Footer";
+import Footer  from "../components/Footer/Footer";
 
 function MyRoutes() {
   return (

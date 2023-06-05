@@ -27,7 +27,8 @@ const festivalSchema = mongoose.Schema({
       fecha_dia: Number,
       fecha_mes: Number,
       fecha_año: Number 
-    }
+    },
+    thumbnail: String
   })
 
 export default mongoose.model("festival", festivalSchema)

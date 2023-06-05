@@ -14,9 +14,9 @@ const getMessage = async (req, res) => {
 /**
  * Método para crear un item
  */
-const postMessage = async (req, res, next) => {
+const postMessage = async (req, res) => {
   //Obtiene el body de la request, utilizando desestructuración. const body = req.body
-  const { body } = req
+  const { body } = req.body
   //Persistir los datos a BD, creando un documento
   const data = await usersModel.create(body)
   

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //COMPONENT
 export default function FestivalCard({ fest }) {
   return (
-      <section className="card">
+      <article className="card">
         <div className="imgBx">
           <img src={fest.thumbnail} alt="Imagen Festival" />
         </div>
@@ -33,6 +33,6 @@ export default function FestivalCard({ fest }) {
               Ver Festival
           </Link>
         </div>
-      </section>
+      </article>
   )
 }

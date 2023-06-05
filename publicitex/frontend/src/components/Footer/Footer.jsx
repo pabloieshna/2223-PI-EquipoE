@@ -9,9 +9,9 @@ import {
 } from "react-icons/si";
 // import { Logo } from "./Logo";
 //COMPONENT
-export function Footer() {
+export default function Footer() {
   return (
-    <section className="footerContainer">
+    <footer className="footerContainer">
       <ul className="sci">
         <li className='footerElement'>
           <Link
@@ -51,6 +51,6 @@ export function Footer() {
           </Link>
         </li>
       </ul>
-      </section>
+      </footer>
   );
 }

@@ -20,9 +20,16 @@ const getFestivalByCity = async (req, res) => {
   res.send({data})  
 }
 
-const createFestival = async (req, res) =>{
-  const { body }=req;
-  const data = await festivalModel.create(body);
+
+const createFestival = async (req, res) => {
+  const body = req.body
+  // console.log(`recipe body: ${body}`)
+  console.log(JSON.stringify(body, null, 2))
+
+  const data = await festivalModel.create(body)
+
+  // console.log(body)
+  res.send({ data })
 }
 
 /**
@@ -30,7 +37,7 @@ const createFestival = async (req, res) =>{
  */
 const deleteFestivalById = async (req, res) => { 
   const data = await festivalModel.deleteOne({id: req.params.id})
-  res.send('Eliminado Correctamente el festival con id: ', req.params.id)
+   res.send({data})
 } 
 
 //exportar los métodos

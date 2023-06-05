@@ -11,12 +11,12 @@ export default function Festivals(){
         getFestivals()
     },[])
     return(
-        <article className="containerCards-Festivals">
+        <main className="containerCards-Festivals">
             {
                 festivales?.map((festival)=>(
                     <Festival key={festival.id} fest={festival}/>
                 ))
             }
-        </article>
+        </main>
     );
 }

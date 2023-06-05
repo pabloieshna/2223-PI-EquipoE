@@ -17,25 +17,25 @@ export default function BusquedaFestival() {
     getFestivals({ search: query })
 
     // console.log(e.target)
-     console.log(query)
-     console.log(festivales)
+    //  console.log(query)
+    //  console.log(festivales)
   }
 
   return (
-  <>
-    <section className="page">
+    <main className="page">
       <h1 className='titulo'>Dónde quieres disfrutar</h1>
       <form name='frmsearch' className="searchForm" onSubmit={handleSubmit}>
         <input style={{ width: '25rem' }} name="query" type="text" className="formInput" placeholder='busca una ciudad para ver sus festivales' autoComplete='Off' />
         <input type="submit" className="formSubmit" value="buscar" />
       </form>
+    
+    <section className='festivalesContainer'>
+      {
+        festivales.map((festival)=>(
+          <Festival key={festival.id} fest={festival}/>
+        ))
+      }
     </section>
-
-    {
-      festivales.map((festival)=>(
-        <Festival key={festival.id} fest={festival}/>
-      ))
-    }
-  </>
+  </main>
   )
 }

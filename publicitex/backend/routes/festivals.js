@@ -6,7 +6,7 @@ festivalRouter.get('/festivals',  getFestivals);
  
 festivalRouter.get('/festival/:city', getFestivalByCity);
  
-festivalRouter.post('/createFestivals', createFestival);
+festivalRouter.post('/createFestival', createFestival);
 
 festivalRouter.delete('/deleteFestival/:id', deleteFestivalById);
 
